@@ -11,7 +11,7 @@ export const Productdetail = () => {
   const { image, title, price, category, description } = product;
   const { productId } = useParams();
   const dispatch = useDispatch();
-  console.log(  "hello ",productId);
+  
 
   const fetchProductDetail = async () => {
     const response = await axios
@@ -20,7 +20,7 @@ export const Productdetail = () => {
         console.log("err is ", err);
       });
       dispatch( SelectedProduct (response.data));
-      console.log(response.data);
+     
   };
 
   useEffect(() => {
