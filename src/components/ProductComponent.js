@@ -12,7 +12,7 @@ export const ProductComponent = () => {
 					<div className='ui link cards'>
 						<div className='card'>
 							<div className='image'>
-								<img src={image} alt={title} />
+								<img src={image} alt={title} style={{ height: '25rem' }} />
 							</div>
 						</div>
 						<div className='content'>

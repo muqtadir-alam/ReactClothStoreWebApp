@@ -12,9 +12,15 @@ function App() {
 			<Router>
 				<Header />
 				<Switch>
-					<Route exact path='/ReactClothStoreWebApp' component={ProductList} />
-					<Route exact path='/product/:productId' component={Productdetail} />
-					<Route>404</Route>
+					<div style={{ marginTop: '11rem' }}>
+						<Route
+							exact
+							path='/ReactClothStoreWebApp'
+							component={ProductList}
+						/>
+						<Route exact path='/product/:productId' component={Productdetail} />
+						<Route>404</Route>
+					</div>
 				</Switch>
 			</Router>
 		</div>
